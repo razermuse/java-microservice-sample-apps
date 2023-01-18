@@ -1,18 +1,24 @@
 version: "3.0"
 services:
   bookstore-datamanager:
+    image: bookstore-datamanager:latest
+    container_name: bookstore-datamanager
     build: ./bookstore-data-manager
     ports:
       - "8001:8001"
     networks:
       - sample-app
   bookstore-devservice:
+    image: bookstore-devservice:latest
+    container_name: bookstore-devservice
     build: ./bookstore-devservice
     ports:
       - "8002:8002"
     networks:
       - sample-app
   bookstore-frontend:
+    image: bookstore-frontend:latest
+    container_name: bookstore-frontend
     build: ./bookstore-frontend
     ports:
       - "8000:8000"
