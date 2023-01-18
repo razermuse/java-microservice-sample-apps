@@ -24,10 +24,8 @@ The bookstore-data-manager app is a SpringBoot app which holds the book data, of
  - POST /delete
  - GET /list
  
-### bookstore-devservice (8002) 
+### bookstore-devservice (aka debug) (8002) 
  
-### bookstore-debug
-
 The bookstore-debug app is a Dropwizard app that offers info to the devs:
  - GET /application/ping
  - GET /application/info?env=qa (this endpoint has an SSRF vulnerability)
@@ -38,13 +36,7 @@ The first step is to start all 3 of the services, which will run on ports 8000, 
 
 To start normally:
 ```
-$ docker-compose up
-```
-
-To start with Contrast enabled, first edit contrast_security.yaml with your agent credentials, then:
-```
-$ cp /path/to/contrast.jar .
-$ docker-compose -f docker-compose.yml -f docker-compose-contrast.yml up
+$ docker-compose up -d 
 ```
 
 If you don't want to use docker-compose, each service has a Dockerfile to make running 1 step. Consult each service's `README.md` to see the commands.
