@@ -5,7 +5,7 @@ There are 3 microservice apps that implement a "book store".
 
 ## The Microservices
 
-### bookstore-frontend
+### bookstore-frontend (8000)
 
 The bookstore-frontend app is a jax-rs app serving as a front end for the book store, exposing these
 endpoints for book management:
@@ -15,7 +15,7 @@ endpoints for book management:
  - GET /list
  - GET /debug
 
-### bookstore-data-manager
+### bookstore-data-manager (8001)
 
 The bookstore-data-manager app is a SpringBoot app which holds the book data, offering a few services:
  - GET /ping
@@ -23,6 +23,8 @@ The bookstore-data-manager app is a SpringBoot app which holds the book data, of
  - POST /update (this "internal only" endpoint has a deserialization vulnerability)
  - POST /delete
  - GET /list
+ 
+### bookstore-devservice (8002) 
  
 ### bookstore-debug
 
