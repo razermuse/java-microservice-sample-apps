@@ -1,7 +1,5 @@
 # java-sample-apps
-This repo holds a few Java apps showing the agent's ability to discover the most common vulnerabilities in microservices.
-
-There are 3 microservice apps that implement a "book store".
+This repo holds a few Java apps that use the microservices architecture (versus a monolythic application). There are 3 microservice apps that implement a "book store".
 
 ## The Microservices
 
