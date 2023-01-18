@@ -6,7 +6,7 @@ This repo holds a few Java apps that use the microservices architecture (versus 
 ### bookstore-frontend (8000)
 
 The bookstore-frontend app is a jax-rs app serving as a front end for the book store, exposing these
-endpoints for book management:
+endpoints for book management (there is no GUI):
  - GET /health
  - POST /add (this endpoint has an XXE vulnerability)
  - POST /delete
