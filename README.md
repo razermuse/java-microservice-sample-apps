@@ -30,7 +30,14 @@ The bookstore-debug app is a Dropwizard app that offers info to the devs:
 
 ## Usage
 
-The first step is to start all 3 of the services, which will run on ports 8000, 8001 and 8002, respectively.
+The first step is to build all 3 of the microservices (aka sub applications).
+
+To build using docker compose:
+```
+$ docker-compose build 
+```
+
+The next step is to start the microservices, which will run on ports 8000, 8001 and 8002, respectively.
 
 To start normally:
 ```
