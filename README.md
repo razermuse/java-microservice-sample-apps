@@ -1,4 +1,4 @@
-# java-sample-apps
+# java-microservice-sample-apps (Book Store)
 This repo holds a few Java apps that use the microservices architecture (versus a monolythic application). There are 3 microservice apps that implement a "book store".
 
 ## The Microservices
